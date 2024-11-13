@@ -1,3 +1,105 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-violet-500;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
+
+/* Glass Effect */
+.glass {
+  @apply backdrop-blur-lg bg-white/5 border border-white/10;
+}
+
+/* Text Gradient Animation */
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Hover Line Effect */
+.hover-line {
+  @apply relative;
+}
+
+.hover-line::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+}
+
+.hover-line:hover::after {
+  @apply w-full;
+}
+
+/* Button Glow Effect */
+.btn-glow {
+  @apply relative overflow-hidden;
+}
+
+.btn-glow::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-primary/0 via-white/20 to-primary/0 translate-x-[-200%];
+}
+
+.btn-glow:hover::before {
+  @apply translate-x-[200%] transition-transform duration-1000;
+}
+
+/* Card Border Gradient */
+.border-gradient {
+  border: double 1px transparent;
+  background-image: linear-gradient(#1A1A1A, #1A1A1A), 
+                    linear-gradient(to right, theme('colors.primary.DEFAULT'), theme('colors.violet.500'));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* Animated Background Grid */
+.grid-bg {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
