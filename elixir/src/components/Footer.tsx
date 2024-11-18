@@ -11,7 +11,7 @@ export function Footer() {
             <span className="font-bold">Elixyree</span>
           </div>
           <div className="text-sm text-gray-400">
-            © 2024 Elixyree. Tous droits réservés.
+            © 2024 Elixyre. Tous droits réservés.
           </div>
         </div>
       </div>
