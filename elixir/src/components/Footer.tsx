@@ -8,10 +8,10 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-2">
             <Boxes className="text-primary h-6 w-6" />
-            <span className="font-bold">Elixyr</span>
+            <span className="font-bold">Elixyree</span>
           </div>
           <div className="text-sm text-gray-400">
-            © 2024 Elixyr. Tous droits réservés.
+            © 2024 Elixyree. Tous droits réservés.
           </div>
         </div>
       </div>

@@ -48,7 +48,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold">Email</h4>
-                  <p className="text-gray-400">contact@elixyr.com</p>
+                  <p className="text-gray-400">contact.elixyre@gmail.com</p>
                 </div>
               </motion.div>
 

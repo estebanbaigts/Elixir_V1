@@ -38,7 +38,7 @@ export function Navbar() {
               whileHover={{ scale: 1.05 }}
             >
               <Boxes className="text-primary h-8 w-8" />
-              <span>Elixyr</span>
+              <span>Elixyre</span>
             </motion.a>
 
             <div className="hidden md:flex items-center gap-8">
