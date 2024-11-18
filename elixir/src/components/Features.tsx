@@ -26,7 +26,7 @@ export function Features() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl font-bold mb-6">
-              Pourquoi choisir <span className="gradient-text">Elixyree</span> ?
+              Pourquoi choisir <span className="gradient-text">Elixyre</span> ?
             </h2>
             <div className="space-y-6">
               {features.map((feature, index) => (
